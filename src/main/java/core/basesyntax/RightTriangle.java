@@ -24,7 +24,7 @@ public class RightTriangle extends Figure {
                 .append(" units, secondleg: ")
                 .append(secondLeg)
                 .append(" units, color: ")
-                .append(color.toString().toLowerCase());
+                .append(color);
         return builder.toString();
     }
 

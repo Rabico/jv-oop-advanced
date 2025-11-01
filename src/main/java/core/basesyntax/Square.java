@@ -20,7 +20,7 @@ public class Square extends Figure {
                 .append(getArea()).append(" sq. units, side: ")
                 .append(side)
                 .append(" units, color: ")
-                .append(color.toString().toLowerCase());
+                .append(color);
         return builder.toString();
     }
 

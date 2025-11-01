@@ -24,7 +24,7 @@ public class Rectangle extends Figure {
                 .append(" units, secondside: ")
                 .append(secondside)
                 .append(" units, color: ")
-                .append(color.toString().toLowerCase());
+                .append(color);
         return builder.toString();
     }
 }

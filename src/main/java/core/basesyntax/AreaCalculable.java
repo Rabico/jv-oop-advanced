@@ -1,8 +1,7 @@
 package core.basesyntax;
 
-public interface Behavior {
+public interface AreaCalculable {
 
     double getArea();
 
-    String getDraw();
 }

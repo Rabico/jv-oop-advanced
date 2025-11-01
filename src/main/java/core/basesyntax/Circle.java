@@ -22,7 +22,7 @@ public class Circle extends Figure {
                 .append(getArea()).append(" sq. units, radius: ")
                 .append(radius)
                 .append(" units, color: ")
-                .append(color.toString().toLowerCase());
+                .append(color);
         return builder.toString();
     }
 }
