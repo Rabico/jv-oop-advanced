@@ -1,8 +1,15 @@
 package core.basesyntax;
 
-public abstract class Figure {
-    protected double area;
+public abstract class Figure implements Behavior {
     protected Color color;
-    public abstract double GetArea();
-    public abstract String GetDraw();
+
+    @Override
+    public double getArea() {
+        return 0;
+    }
+
+    @Override
+    public String getDraw() {
+        return "";
+    }
 }

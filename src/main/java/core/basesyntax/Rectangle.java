@@ -1,30 +1,29 @@
 package core.basesyntax;
 
 public class Rectangle extends Figure {
-    private double firstside;
-    private double secondside;
+    private int firstside;
+    private int secondside;
     public Rectangle(int firstside, int secondside, Color color){
         this.color = color;
         this.firstside = firstside;
-        this. secondside =  secondside;
-        this.area = firstside * secondside;
+        this.secondside =  secondside;
     }
 
     @Override
-    public double GetArea() {
-        return area;
+    public double getArea() {
+        return firstside * secondside;
     }
 
     @Override
-    public String GetDraw() {
+    public String getDraw() {
         StringBuilder builder = new StringBuilder();
-        builder.append("Figure: square, area ")
-                .append(area).append(" sp. unit, firstside: ")
+        builder.append("Figure: rectangle, area ")
+                .append(getArea()).append(" sq. units, firstside: ")
                 .append(firstside)
-                .append(" , secondside: ")
+                .append(" units, secondside: ")
                 .append(secondside)
                 .append(" units, color: ")
-                .append(color);
+                .append(color.toString().toLowerCase());
         return builder.toString();
     }
 }
