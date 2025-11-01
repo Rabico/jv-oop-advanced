@@ -3,10 +3,11 @@ package core.basesyntax;
 public class Rectangle extends Figure {
     private int firstside;
     private int secondside;
-    public Rectangle(int firstside, int secondside, Color color){
+
+    public Rectangle(int firstside, int secondside, Color color) {
         this.color = color;
         this.firstside = firstside;
-        this.secondside =  secondside;
+        this.secondside = secondside;
     }
 
     @Override

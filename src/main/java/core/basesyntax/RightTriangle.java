@@ -3,15 +3,16 @@ package core.basesyntax;
 public class RightTriangle extends Figure {
     private int firstLeg;
     private int secondLeg;
-    public RightTriangle(int firstLeg, int secondLeg, Color color){
+
+    public RightTriangle(int firstLeg, int secondLeg, Color color) {
         this.color = color;
         this.firstLeg = firstLeg;
-        this. secondLeg =  secondLeg;
+        this. secondLeg = secondLeg;
     }
 
     @Override
     public double getArea() {
-        return (double)(firstLeg * secondLeg)/2.0;
+        return (double)(firstLeg * secondLeg) / 2.0;
     }
 
     @Override

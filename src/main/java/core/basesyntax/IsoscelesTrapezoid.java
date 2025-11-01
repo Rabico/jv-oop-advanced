@@ -4,6 +4,7 @@ public class IsoscelesTrapezoid extends Figure {
     private int firstBase;
     private int secondBase;
     private int heigh;
+
     public IsoscelesTrapezoid(int firstBase, int secondBase, int heigh, Color color) {
         this.color = color;
         this.firstBase = firstBase;
@@ -13,7 +14,7 @@ public class IsoscelesTrapezoid extends Figure {
 
     @Override
     public double getArea() {
-        return (double)(firstBase + secondBase)*heigh/2.0;
+        return (double)(firstBase + secondBase) * heigh / 2.0;
     }
 
     @Override
